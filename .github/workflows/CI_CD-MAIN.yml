@@ -8,4 +8,7 @@ jobs:
   Build:
     uses: nareshgdevops/roboshop-github-actions/.github/workflows/CI-main.yml@main
     with:
-      appType: python
+      appType: 'python'
+      appName: 'payment'
+    secrets:
+      VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
